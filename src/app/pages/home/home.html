@@ -1,0 +1,26 @@
+<ActionBar title="Opnions Poll">
+  <ActionItem visibility="{{ (tabId === 0) ? 'visible' : 'collapse' }}" text="Logout" ios.systemIcon="7" ios.position="right" android.position="popup"></ActionItem>
+  <ActionItem visibility="{{ (tabId === 1) ? 'visible' : 'collapse' }}" >
+      <SearchBar  hint="Search"></SearchBar>
+  </ActionItem>  
+</ActionBar>
+
+<TabView (selectedIndexChanged)="tabIndexChanged($event)">
+  <StackLayout *tabItem="{title: 'Feeds'}">
+    <feeds></feeds>
+    <!-- <router-outlet name="firstTab"></router-outlet> -->
+  </StackLayout>
+  <StackLayout *tabItem="{title: 'Friends'}">
+    <friends></friends>
+    <!-- <router-outlet name="secondTab"></router-outlet> -->
+  </StackLayout>
+  <StackLayout *tabItem="{title: 'Settings'}">
+    <Label text="WIP"></Label>
+    <!-- <router-outlet name="firstTab"></router-outlet> -->
+  </StackLayout>
+  <StackLayout *tabItem="{title: 'Logout'}">
+    <Label text="WIP"></Label>
+    <!-- <router-outlet name="secondTab"></router-outlet> -->
+  </StackLayout>
+
+</TabView>

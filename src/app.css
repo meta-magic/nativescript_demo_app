@@ -1,0 +1,96 @@
+@import url("~/platform.css");
+/* @import '~nativescript-theme-core/css/core.light.css'; */
+
+Page {
+    font-size: 15; 
+}
+
+Label, TextField, ListPicker{
+    font-size: 13;
+} 
+
+.checkbox{
+    font-size: 25;
+    height: 23;
+    width: 23;
+    border-width: 1;
+    border-color: lightgray;
+    border-radius: 0;
+}
+
+.round-image{
+    border-radius: 50%;
+    height: 100;
+    width: 100;
+}
+
+.listpicker{
+    position: fixed;
+    bottom: 0;
+}
+
+TextField {
+    padding: 10;
+    
+}
+
+Image {
+    margin-top: 5;
+    margin-bottom: 20;
+}
+
+Button, TextField, Label, ListPicker {
+    margin-left: 16;
+    margin-right: 16;
+    margin-bottom: 10;
+}
+ 
+
+.button-primary {
+    height: 50;
+    background-color: black;
+    color: white;
+    margin-top: 20;
+}
+
+.button-with-border {
+    height: 50;
+    border-width: 1;
+    margin-top: 20;
+    border-color:lightgray;
+}
+
+.button-round {
+    height: 75;
+    width: 75;
+    margin-top: 20;
+    border-radius: 50%;
+    font-size: 30;
+}
+
+.google{
+    background-color: red;
+    color: white;
+}
+
+.facebook{
+    background-color: blue;
+    color: white;
+}
+
+.email{
+    background-color: red;
+    color: white;
+}
+
+.far {
+    font-family: Font Awesome 5 Free, fa-regular-400;
+}
+
+.fab {
+    font-family: Font Awesome 5 Brands, fa-brands-400;
+}
+
+.fas {
+    font-family: Font Awesome 5 Free, fa-solid-900;
+}

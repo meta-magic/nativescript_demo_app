@@ -1,0 +1,5 @@
+<WrapLayout (tap)="toggle()">
+    <Label *ngIf="isSelected" style="margin-right: 0"  class="fas checkbox" text="&#xf14a;"></Label>
+    <Label *ngIf="!isSelected" style="margin-right: 0; background-color: white;"  class="fas checkbox" text=""></Label>
+    <Label style="margin-left: 0;" text=" {{label}}"></Label>
+</WrapLayout>

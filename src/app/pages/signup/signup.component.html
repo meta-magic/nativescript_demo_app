@@ -1,0 +1,25 @@
+<ActionBar title="Singup">
+</ActionBar>
+<FlexboxLayout flexDirection="column">
+    <Label flexGrow="1"></Label>
+    <StackLayout>
+        <Image src="res://metamagic" stretch="none" horizontalAlignment="center"></Image>
+
+        <Label class="fas" text="Mobile number"></Label>
+
+        <FlexboxLayout flexDirection="row">
+            <Button style="margin-right: 0; border-bottom-width: 1; border-color:lightgray;"  text="+{{country.countryIsd}}" (tap)="toggleCountryCode()"></Button>
+            <TextField style="margin-left: 0;" flexGrow="1" hint="Mobile number"></TextField>
+        </FlexboxLayout>
+
+        <Label text="Set Password (minimum 6 digit)"></Label>
+        <TextField hint="Password" secure="true"></TextField>
+
+        <Label text="Confim Password"></Label>
+        <TextField hint="Confim password" secure="true"></TextField>
+
+        <check-box [label]="'Keep me signed in'"></check-box>
+        <Button class="button-with-border" text="Register" (tap)="registerUser()"></Button>
+    </StackLayout>
+    <Label flexGrow="1"></Label>
+</FlexboxLayout>

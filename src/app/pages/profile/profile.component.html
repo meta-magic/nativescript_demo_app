@@ -1,0 +1,67 @@
+<ActionBar title="Opnions Poll">
+    <ActionItem text="Done" ios.position="right" android.position="popup"></ActionItem>
+</ActionBar>
+
+<FlexboxLayout flexDirection="column">
+
+    <StackLayout>
+        <Image class="round-image" src="https://api.amexio.org/api/v5.3.1/assets/images/profile/ketan.jpg"></Image>
+        <Button text="Change Profile Photo"></Button>
+    </StackLayout>
+
+    <FlexboxLayout flexDirection="row">
+        <Label style="margin-right: 0; border-bottom-width: 1; border-color:lightgray;" text="Name:"></Label>
+        <TextField style="margin-left: 0;" flexGrow="1" hint="Name" text="Ketan Gote"></TextField>
+    </FlexboxLayout>
+
+    <FlexboxLayout flexDirection="row" (tap)="selectGender()">
+        <Label style="margin-right: 0; border-bottom-width: 1; border-color:lightgray;" text="Gender:"></Label>
+        <TextField style="margin-left: 0;margin-right: 0;" flexGrow="1" hint="Gender"  text="{{gender.generName}}" ></TextField>
+        <Button style="margin-left: 0; border-bottom-width: 1; border-color:lightgray; color: lightgray;" class="fas"
+            text="&#xf105; "></Button>
+    </FlexboxLayout>
+
+    <FlexboxLayout flexDirection="row"  (tap)="selectCity()">
+        <Label style="margin-right: 0; border-bottom-width: 1; border-color:lightgray;" text="City:"></Label>
+        <TextField style="margin-left: 0;margin-right: 0;" flexGrow="1" hint="City" text="India"></TextField>
+        <Button style="margin-left: 0; border-bottom-width: 1; border-color:lightgray; color: lightgray;" class="fas"
+            text="&#xf105; "></Button>
+    </FlexboxLayout>
+
+    <FlexboxLayout flexDirection="row"  (tap)="selectProvience()">
+        <Label style="margin-right: 0; border-bottom-width: 1; border-color:lightgray;" text="Province:"></Label>
+        <TextField style="margin-left: 0;margin-right: 0;" flexGrow="1" hint="Province" text="Mahrastra"></TextField>
+        <Button style="margin-left: 0; border-bottom-width: 1; border-color:lightgray; color: lightgray;" class="fas"
+            text="&#xf105; "></Button>
+    </FlexboxLayout>
+
+    <FlexboxLayout flexDirection="row"  (tap)="selectOccupation()">
+        <Label style="margin-right: 0; border-bottom-width: 1; border-color:lightgray;" text="Occupation:"></Label>
+        <TextField style="margin-left: 0;margin-right: 0;" flexGrow="1" hint="Occupation" text="S/W eng"></TextField>
+        <Button style="margin-left: 0; border-bottom-width: 1; border-color:lightgray; color: lightgray;" class="fas"
+            text="&#xf105; "></Button>
+    </FlexboxLayout>
+    
+    <FlexboxLayout flexDirection="row"  (tap)="selectDOB()">
+        <Label style="margin-right: 0; border-bottom-width: 1; border-color:lightgray;" text="DOB:"></Label>
+        <TextField style="margin-left: 0;margin-right: 0;" flexGrow="1" hint="Occupation" text="{{dob | date:'dd MMM, yyyy' }}" ></TextField>
+        <Button style="margin-left: 0; border-bottom-width: 1; border-color:lightgray; color: lightgray;" class="fas"
+            text="&#xf105; "></Button>
+    </FlexboxLayout>
+
+    <FlexboxLayout flexDirection="row"  (tap)="selectHumanStrength()">
+        <Label style="margin-right: 0; border-bottom-width: 1; border-color:lightgray;" text="Human Strength:"></Label>
+        <TextField style="margin-left: 0;margin-right: 0;" flexGrow="1" hint="Human Strength"  text="{{humanStrenth.name}}" ></TextField>
+        <Button style="margin-left: 0; border-bottom-width: 1; border-color:lightgray; color: lightgray;" class="fas"
+            text="&#xf105; "></Button>
+    </FlexboxLayout>
+
+    <FlexboxLayout flexDirection="row"  (tap)="selectHumanValue()">
+        <Label style="margin-right: 0; border-bottom-width: 1; border-color:lightgray;" text="Human Values:"></Label>
+        <TextField style="margin-left: 0;margin-right: 0;" flexGrow="1" hint="Human Values"  text="{{humanValues.name}}" ></TextField>
+        <Button style="margin-left: 0; border-bottom-width: 1; border-color:lightgray; color: lightgray;" class="fas"
+            text="&#xf105; "></Button>
+    </FlexboxLayout>
+
+
+</FlexboxLayout>

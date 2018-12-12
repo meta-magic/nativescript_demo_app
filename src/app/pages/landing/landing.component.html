@@ -1,0 +1,17 @@
+<FlexboxLayout flexDirection="column">
+    <Label flexGrow="1"></Label>
+    <FlexboxLayout flexDirection="column" justifyContent="center">
+        <FlexboxLayout flexDirection="row" justifyContent="space-around">
+                <Label text=""></Label>
+                <Label style="font-size:20;" text="Login With"></Label>
+                <Label text=""></Label>
+        </FlexboxLayout>
+        
+        <FlexboxLayout flexDirection="row" justifyContent="space-around">
+            <Button class="fab button-round google" text="&#xf0d5;"></Button>
+            <Button class="fab button-round facebook" text="&#xf082;" (tap)="validateLoginUsing('FB',2)"></Button>
+            <Button class="fas button-round email" text="&#xf3cd;" (tap)="navigate('login')"></Button>
+        </FlexboxLayout>
+    </FlexboxLayout>
+    <Label flexGrow="1"></Label>
+</FlexboxLayout>

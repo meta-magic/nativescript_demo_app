@@ -1,0 +1,11 @@
+<FlexboxLayout flexDirection="column">
+    <Label flexGrow="1"></Label>
+    <StackLayout>
+        <Image src="res://metamagic" stretch="none" horizontalAlignment="center"></Image>
+        <TextField [(ngModel)]="model.phone" class="fas"  hint=" &#xf095; Phone"></TextField>
+        <TextField [(ngModel)]="model.password" class="fas"  hint="&#xf06e; Password" secure="true"></TextField>
+        <Button text="Sign in " class="button-primary" (tap)="signin()"></Button>
+        <Button text="Sign up"  class="button-with-border" (tap)="signUp()"></Button>
+    </StackLayout>
+    <Label flexGrow="1"></Label>
+</FlexboxLayout>

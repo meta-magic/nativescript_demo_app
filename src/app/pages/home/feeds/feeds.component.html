@@ -1,0 +1,14 @@
+
+
+<ListView [items]="data" class="list-group">
+    <ng-template let-item="item">
+        <GridLayout [nsRouterLink]="['/feedsdetails', item.id]" rows="*" columns="50, *, auto" class="list-group-item" >
+            <Image row="0" col="0"  src="https://api.amexio.org/api/v5.3.1/assets/images/profile/ketan.jpg"></Image>
+            <StackLayout row="0" col="1" backgroundColor="white" class="list-group-item">
+                <Label class="list-group-item-heading" [text]="'Title: '+item.title"></Label>
+                <Label class="list-group-item-text" [text]="item.body"></Label>
+            </StackLayout>
+        </GridLayout>
+
+    </ng-template>
+</ListView>

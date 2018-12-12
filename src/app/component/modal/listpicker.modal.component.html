@@ -1,0 +1,5 @@
+<StackLayout class="modal-view-style" sdkExampleTitle sdkToggleNavButton>
+    <ListPicker #listpicker class="listpicker" [items]="listPickerModel.items" selectedIndex="0"
+        (selectedIndexChange)="selectedIndexChanged($event)"></ListPicker>
+    <Button class="button-primary" text="{{listPickerModel.submitText}}" (tap)="submit()"></Button>
+</StackLayout>
